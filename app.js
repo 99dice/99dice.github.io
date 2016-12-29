@@ -1582,16 +1582,16 @@ var BetBoxButton = React.createClass({
           document.getElementById('profitUpdate').innerHTML = (bet.profit/100).toFixed(2);
           
           if(bet.profit>0){
-           document.getElementById('targetUpdate').style.color = "#0EFF00";
-           document.getElementById('profitUpdate').style.color = "#0EFF00";
-           document.getElementById('rollUpdate').style.color = "#0EFF00";
-           document.getElementById('profitLabelBit').style.color = "#0EFF00";
+           document.getElementById('targetUpdate').style.color = "#00FF00";
+           document.getElementById('profitUpdate').style.color = "#00FF00";
+           document.getElementById('rollUpdate').style.color = "#00FF00";
+           document.getElementById('profitLabelBit').style.color = "#00FF00";
           }
           if(bet.profit<0){
-           document.getElementById('targetUpdate').style.color = "#FF3838";
-           document.getElementById('profitUpdate').style.color = "#FF3838";
-           document.getElementById('rollUpdate').style.color = "#FF3838";
-           document.getElementById('profitLabelBit').style.color = "#FF3838";
+           document.getElementById('targetUpdate').style.color = "#999999";
+           document.getElementById('profitUpdate').style.color = "#999999";
+           document.getElementById('rollUpdate').style.color = "#999999";
+           document.getElementById('profitLabelBit').style.color = "#999999";
           }
           
           // We don't get this info from the API, so assoc it for our use
