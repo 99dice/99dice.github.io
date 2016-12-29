@@ -1,4 +1,3 @@
-
 var config = {
   // - Your app's id on moneypot.com
   app_id: 685,                             // <----------------------------- EDIT ME!
@@ -2651,10 +2650,8 @@ window.addEventListener('message', function(event) {
 
 ////////////countup///////////////
 /*
-
     countUp.js
     by @inorganik
-
 */
 
 // target = id of html element or var of previously selected html element where counting occurs
