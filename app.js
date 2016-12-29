@@ -1582,32 +1582,17 @@ var BetBoxButton = React.createClass({
           document.getElementById('profitUpdate').innerHTML = (bet.profit/100).toFixed(2);
           
           if(bet.profit>0){
-           document.getElementById('targetUpdate').style.color = "#65b512";
-           document.getElementById('profitUpdate').style.color = "#65b512";
-           document.getElementById('rollUpdate').style.color = "#65b512";
-           document.getElementById('profitLabelBit').style.color = "#65b512";
+           document.getElementById('targetUpdate').style.color = "#0EFF00";
+           document.getElementById('profitUpdate').style.color = "#0EFF00";
+           document.getElementById('rollUpdate').style.color = "#0EFF00";
+           document.getElementById('profitLabelBit').style.color = "#0EFF00";
           }
-	  if(bet.profit>0.05){
+          if(bet.profit<0){
            document.getElementById('targetUpdate').style.color = "#FF3838";
            document.getElementById('profitUpdate').style.color = "#FF3838";
            document.getElementById('rollUpdate').style.color = "#FF3838";
            document.getElementById('profitLabelBit').style.color = "#FF3838";
-          }		
-          if(bet.profit<0){
-           document.getElementById('targetUpdate').style.color = "#999999";
-           document.getElementById('profitUpdate').style.color = "#999999";
-           document.getElementById('rollUpdate').style.color = "#999999";
-           document.getElementById('profitLabelBit').style.color = "#999999";
           }
-	  if(bet.profit>0.5){
-           document.getElementById('targetUpdate').style.color = "#82ff00";
-           document.getElementById('profitUpdate').style.color = "#82ff00";
-           document.getElementById('rollUpdate').style.color = "#82ff00";
-           document.getElementById('profitLabelBit').style.color = "#82ff00";
-          }	
-		
-		
-		
           
           // We don't get this info from the API, so assoc it for our use
           bet.meta = {
